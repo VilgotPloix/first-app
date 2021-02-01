@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>potins</title>
+</head>
+<body>
+	<h2>PAGE POTIN !</h2>
+    <% gossips.each do |gossip| %>
+        <p> Voici le potin n° <%= id%><br/>
+        Son auteur : <%= gossip.autor %><br/>
+        Le contenu du potin : <%= gossip.content %>
+        </p>
+    <% end %>
+    <a href="/edit">modifie le potin !</a>
+    <a href="/">Page d'acceuil</a>
+</body>
+</html>
